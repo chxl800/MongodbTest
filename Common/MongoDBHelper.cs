@@ -12,6 +12,8 @@ namespace MongodbTest.Common
     /// </summary>
     public class MongoDbHelper
     {
+        //connStr=mongodb://[username:password@]host1[:port1][,host2[:port2],…[,hostN[:portN]]][/[database][?options]]
+        //数据库连接字符串，如：mongodb://sa:123456@localhost:27017
         private static readonly string connStr = "mongodb://127.0.0.1:27017";
         private static readonly string dbName = "test";
         private static IMongoDatabase db = null;
